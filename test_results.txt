@@ -1,0 +1,88 @@
+Test 01 [PASS] Q1 total revenue, named year
+  Query : What is Apple's total revenue in 2025?
+  Answer: Apple's total revenue in FY2025 was $416,161 million ($416.2 billion).
+
+Test 02 [PASS] Q1 default year = latest
+  Query : What is the total revenue of Microsoft?
+  Answer: Microsoft's total revenue in FY2025 was $281,724 million ($281.7 billion).
+
+Test 03 [PASS] Q2 change vs last year
+  Query : How has Tesla's net income changed over the last year?
+  Answer: Tesla's net income decreased from $7,091 million ($7.1 billion) in FY2024 to $3,794 million ($3.8 billion) in FY2025 (-46.5%).
+
+Test 04 [PASS] Q2 change between two years
+  Query : How did Microsoft's revenue change from 2023 to 2025?
+  Answer: Microsoft's total revenue increased from $211,915 million ($211.9 billion) in FY2023 to $281,724 million ($281.7 billion) in FY2025 (+32.9%).
+
+Test 05 [PASS] Q2 change, single year given
+  Query : How did Apple's net income change in 2024?
+  Answer: Apple's net income decreased from $96,995 million ($97.0 billion) in FY2023 to $93,736 million ($93.7 billion) in FY2024 (-3.4%).
+
+Test 06 [PASS] Q3 highest across companies
+  Query : Which company had the highest net income in 2025?
+  Answer: In FY2025, Apple had the highest net income: $112,010 million ($112.0 billion).
+          All companies: Apple $112,010 million ($112.0 billion); Microsoft $101,832 million ($101.8 billion); Tesla $3,794 million ($3.8 billion).
+
+Test 07 [PASS] Q3 lowest across companies
+  Query : Which company had the lowest total liabilities in 2024?
+  Answer: In FY2024, Tesla had the lowest total liabilities: $48,390 million ($48.4 billion).
+          All companies: Tesla $48,390 million ($48.4 billion); Microsoft $243,686 million ($243.7 billion); Apple $308,030 million ($308.0 billion).
+
+Test 08 [PASS] Q4 assets and liabilities
+  Query : What are Apple's total assets and liabilities?
+  Answer: Apple (FY2025): total assets $359,241 million ($359.2 billion), total liabilities $285,508 million ($285.5 billion). Liabilities are 79.5% of assets.
+
+Test 09 [PASS] Q4 liabilities, named year
+  Query : Microsoft total liabilities 2023
+  Answer: Microsoft (FY2023): total assets $411,976 million ($412.0 billion), total liabilities $205,753 million ($205.8 billion). Liabilities are 49.9% of assets.
+
+Test 10 [PASS] Q5 operating cash flow
+  Query : What is Tesla's operating cash flow in 2024?
+  Answer: Tesla's operating cash flow in FY2024 was $14,923 million ($14.9 billion).
+
+Test 11 [PASS] Two companies at once
+  Query : Compare Apple and Tesla revenue in 2025
+  Answer: Apple's total revenue in FY2025 was $416,161 million ($416.2 billion).
+          Tesla's total revenue in FY2025 was $94,827 million ($94.8 billion).
+
+Test 12 [PASS] Case-insensitive input
+  Query : WHAT IS TESLA'S TOTAL REVENUE IN 2023
+  Answer: Tesla's total revenue in FY2023 was $96,773 million ($96.8 billion).
+
+Test 13 [PASS] No company named -> all three
+  Query : What is the total revenue?
+  Answer: I have data for Apple, Microsoft and Tesla only. Showing all three:
+          Apple's total revenue in FY2025 was $416,161 million ($416.2 billion).
+          Microsoft's total revenue in FY2025 was $281,724 million ($281.7 billion).
+          Tesla's total revenue in FY2025 was $94,827 million ($94.8 billion).
+
+Test 14 [PASS] Unknown company handled
+  Query : What is Google's revenue?
+  Answer: I have data for Apple, Microsoft and Tesla only. Showing all three:
+          Apple's total revenue in FY2025 was $416,161 million ($416.2 billion).
+          Microsoft's total revenue in FY2025 was $281,724 million ($281.7 billion).
+          Tesla's total revenue in FY2025 was $94,827 million ($94.8 billion).
+
+Test 15 [PASS] Year outside data
+  Query : What was Apple's revenue in 2030?
+  Answer: I only have data for fiscal years 2023 to 2025.
+
+Test 16 [PASS] No earlier year available
+  Query : How did Apple's revenue change in 2023?
+  Answer: I don't have FY2022 data, so I can't calculate the change for FY2023. Try a period within 2023 to 2025.
+
+Test 17 [PASS] Unsupported topic
+  Query : What is the weather today?
+  Answer: Sorry, I can only provide information on total revenue, net income, total assets, total liabilities and operating cash flow for Apple, Microsoft and Tesla. Type 'help' to see example questions.
+
+Test 18 [PASS] Help command
+  Query : help
+  Answer: Example questions I can answer (Apple, Microsoft, Tesla; fiscal years 2023-2025; USD millions):
+            1. What is the total revenue of Apple in 2025?
+            2. How has Tesla's net income changed over the last year?
+            3. Which company had the highest net income in 2025?
+            4. What are Microsoft's total assets and liabilities?
+            5. What is Tesla's operating cash flow in 2024?
+          Tip: if you don't name a company I show all three; if you don't name a year I use the latest (2025).
+
+RESULT: 18/18 tests passed
