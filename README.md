@@ -43,3 +43,6 @@ python test_chatbot.py           # runs the tests and writes test_results.txt
 
 ## Possible improvements
 Use an LLM or an NLP library for intent detection (so free-form questions work), add conversation memory, connect to live filing data (e.g. SEC EDGAR), and build a simple Flask or chat web interface.
+
+## AI usage
+Built with AI assistance (Claude) for code generation. Data extraction from the 10-K filings, validation and testing of results were done by me.
